@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Engineer Blessed Joe</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/contact-bg.jpg');
+            /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 24px;
+            color: #FFA500;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            color: #FFA500;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-form button {
+            background-color: #FFA500;
+            color: #000;
+            padding: 12px;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background-color: #e69500;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #FFA500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Engineer Blessed Joe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="overlay">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form action="https://formsubmit.co/joemutugi291@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Google Map -->
+            <h2>My Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.179216850725!2d37.639029339550775!3d0.08321210248179044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18255d8017f7615f%3A0x9d343364c4cc9a3c!2sMeru%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2ske!4v1715744170714!5m2!1sen!2ske"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Engineer Blessed Joe. All rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/BlessedJoe254" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joe-mutugi-75b665362" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/JoeMutugiM" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/+254741384144" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
